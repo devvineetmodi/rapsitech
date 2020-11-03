@@ -1,0 +1,24 @@
+#main-nav {
+  .container {
+    display: block;
+    padding-bottom: 0.4rem;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .menu {
+    justify-content: center;
+  }
+}
+
+#features .features-container , #work-details, #who, #clients .container, #work .items, #contact .contact-details {
+  grid-template-columns: 1fr !important;
+}
+
+#main-footer {
+  display: block;
+  .social-menu {
+    justify-content: center;
+    margin-top: 0.8rem;
+  }
+}

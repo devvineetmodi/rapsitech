@@ -1,0 +1,30 @@
+#main-nav .container {
+  display: block;
+  padding-bottom: 0.4rem;
+}
+
+#main-nav .logo {
+  margin: 0 auto;
+}
+
+#main-nav .menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#features .features-container, #work-details, #who, #clients .container, #work .items, #contact .contact-details {
+  -ms-grid-columns: 1fr !important;
+      grid-template-columns: 1fr !important;
+}
+
+#main-footer {
+  display: block;
+}
+
+#main-footer .social-menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.8rem;
+}
