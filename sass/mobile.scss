@@ -8,6 +8,11 @@
   }
   .menu {
     justify-content: center;
+    li {
+      a {
+        padding: 0.3rem 0.5rem;
+      }
+    }
   }
 }
 
@@ -21,4 +26,18 @@
     justify-content: center;
     margin-top: 0.8rem;
   }
+}
+
+#feedback {
+  .feedback-container {
+    grid-template-columns: 1fr;
+    .feedback-img {
+      order: 1;
+      img {width: 90%;}
+    }
+    .feedback-form {
+      order: 2;
+    }
+  }
+
 }

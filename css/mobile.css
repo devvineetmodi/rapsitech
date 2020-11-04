@@ -13,6 +13,10 @@
           justify-content: center;
 }
 
+#main-nav .menu li a {
+  padding: 0.3rem 0.5rem;
+}
+
 #features .features-container, #work-details, #who, #clients .container, #work .items, #contact .contact-details {
   -ms-grid-columns: 1fr !important;
       grid-template-columns: 1fr !important;
@@ -27,4 +31,25 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 0.8rem;
+}
+
+#feedback .feedback-container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#feedback .feedback-container .feedback-img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#feedback .feedback-container .feedback-img img {
+  width: 90%;
+}
+
+#feedback .feedback-container .feedback-form {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }

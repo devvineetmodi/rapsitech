@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raps Itech || Web Designers and Developers</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="css/mobile.css"
+    />
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="container">
+        <img src="img/logo2.png" alt="Raps Itech" class="logo" />
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="feedback" class="py-2">
+      <div class="container">
+        <h2>Feedback Form</h2>
+        <p class="lead">Help us improve with your valueable feedback ...</p>
+        <div class="feedback-container">
+          <div class="feedback-form">
+            <form name="feedback" method="POST" data-netlify="true">
+              <div class="form-group">
+                <label class="required" for="firstName">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  pattern="[A-Za-z]{3,12}"
+                  id="firstName"
+                  title="Alphabets Only and 3-12 characters"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  pattern="[A-Za-z]{3,12}"
+                  id="lastName"
+                  placeholder="Doe"
+                  title="Alphabets Only and 3-12 characters"
+                />
+              </div>
+              <div class="form-group">
+                <label class="required" for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Mobile Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  pattern="[6789][0-9]{9}"
+                  placeholder="8054399556"
+                  title=" should be 10 digits long starting with 6,7,8,9"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="required">Message</label>
+                <input
+                  type="text"
+                  name="message"
+                  title="Should contain 20 or more characters"
+                  id="message"
+                  placeholder="20 characters or more"
+                  pattern=".{20,}"
+                />
+              </div>
+              <input type="submit" value="Submit" class="btn-light"/>
+            </form>
+          </div>
+          <div class="feedback-img">
+            <img src="img/feedback.jpg" alt="Feedback">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="main-footer">
+      <p>Design and Developed by &copy; Vineet Modi</p>
+      <ul class="social-menu">
+        <li>
+          <a href="http//www.instagram.com"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="http//www.facebook.com"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="http//www.twitter.com"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

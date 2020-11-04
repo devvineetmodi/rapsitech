@@ -429,6 +429,61 @@ h3 {
   height: 450px;
 }
 
+#feedback .feedback-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#feedback .feedback-form {
+  padding: 1rem 0;
+}
+
+#feedback .feedback-form .form-group {
+  padding: 0.5rem 0;
+}
+
+#feedback .feedback-form .form-group label {
+  display: block;
+}
+
+#feedback .feedback-form .form-group input {
+  display: block;
+  width: 90%;
+  padding: 0.3rem 0.2rem;
+}
+
+#feedback .feedback-form .form-group input[name='message'] {
+  height: 50px;
+}
+
+#feedback .feedback-form .form-group input:focus:valid {
+  border: 1px solid green;
+  outline: none;
+}
+
+#feedback .feedback-form .form-group input:focus:invalid {
+  border: 1px solid red;
+  outline: none;
+}
+
+#feedback .feedback-form .form-group .required::after {
+  content: ' *';
+  padding-left: 0.4rem;
+  color: red;
+  display: inline-block;
+}
+
+#feedback .feedback-img img {
+  border-radius: 20%;
+}
+
+#feedback .btn-light {
+  background: #333;
+  color: #fff;
+}
+
 #main-footer {
   background: #333;
   color: #fff;

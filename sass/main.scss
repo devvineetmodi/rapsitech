@@ -354,6 +354,53 @@ h3 {
 
 
 
+// ============= Feedback Form ================
+#feedback {
+  .feedback-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feedback-form {
+    padding: 1rem 0;
+    .form-group {
+      padding: 0.5rem 0;
+      label {display: block;}
+      input {
+        display: block;
+        width: 90%;
+        padding: 0.3rem 0.2rem;
+      }
+      input[name= 'message'] {
+        height: 50px;
+      }
+      input:focus:valid {
+        border: 1px solid green;
+        outline: none;
+      }
+      input:focus:invalid {
+        border: 1px solid red;
+        outline: none;
+      }
+      .required::after {
+        content: ' *';
+        padding-left: 0.4rem;
+        color: red;
+        display: inline-block;
+      }
+    }
+  }
+  .feedback-img {
+    img {border-radius: 20%;}
+  }
+  .btn-light {
+    background: $dark-color;
+    color: #fff;
+  }
+}
+
+
+
 // ============ Footer ================
 #main-footer {
   background: $dark-color;
